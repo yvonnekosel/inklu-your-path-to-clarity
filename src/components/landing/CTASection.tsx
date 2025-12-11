@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import inkluLogo from "@/assets/inklu-logo.png";
 
 const CTASection = () => {
   return (
@@ -9,9 +10,10 @@ const CTASection = () => {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-balance">
               Du musst diesen Weg nicht allein gehen.
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Inklu zeigt dir, welche Unterstützung dir zusteht – klar, verständlich 
-              und Schritt für Schritt.
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto flex items-center justify-center gap-2 flex-wrap">
+              <img src={inkluLogo} alt="Inklu" className="h-8 w-auto inline-block" />
+              <span>zeigt dir, welche Unterstützung dir zusteht – klar, verständlich 
+              und Schritt für Schritt.</span>
             </p>
           </div>
 
