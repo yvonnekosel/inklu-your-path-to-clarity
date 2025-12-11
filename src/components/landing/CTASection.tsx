@@ -24,8 +24,10 @@ const CTASection = () => {
             </a>
           </div>
 
-          <p className="text-muted-foreground">
-            Nimm dir den Druck. Inklu hilft dir dabei, den nächsten Schritt zu sehen.
+          <p className="text-muted-foreground flex items-center justify-center gap-1.5 flex-wrap">
+            <span>Nimm dir den Druck.</span>
+            <img src={inkluLogo} alt="Inklu" className="h-5 w-auto inline-block" />
+            <span>hilft dir dabei, den nächsten Schritt zu sehen.</span>
           </p>
         </div>
       </div>
