@@ -26,22 +26,21 @@ const FounderSection = () => {
             <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
               <p>
                 Nach einer Operation sollte ich querschnittsgelähmt sein – tatsächlich 
-                war ich vom Hals abwärts gelähmt.
+                war ich vom Hals ab gelähmt. Ein halbes Jahr dauerte es, bis ich 
+                überhaupt wieder sitzen konnte.
               </p>
               <p>
-                Monate im Krankenhaus, Reha, Anträge, Hilfsmittel, Behörden. Ich musste 
-                mein Leben komplett neu organisieren, ohne zu wissen, ob ich jemals wieder 
-                gehen könnte.
+                Ich musste mein Leben von Grund auf neu gestalten – barrierefreie Wohnung, 
+                Pflegedienste, Hilfsmittel. Alles während ich in Krankenhäusern und Reha-Kliniken 
+                um jeden kleinen Fortschritt kämpfte.
               </p>
               <p>
-                Viele Nächte habe ich geweint, weil ich nicht wusste, welche Hilfe mir 
-                eigentlich zusteht.
-              </p>
-              <p>
-                Und irgendwann dachte ich: <span className="text-foreground font-medium">Warum gibt es keine App, die mir das erklärt?</span>
+                In dieser Zeit fragte ich mich oft: <span className="text-foreground font-medium">Warum gibt es keine App, 
+                die mir zeigt, welche Unterstützung mir eigentlich zusteht?</span>
               </p>
               <p className="text-foreground font-medium">
-                Diese App habe ich nun gebaut. Für Menschen wie mich. Für Menschen wie dich.
+                Heute bin ich stolz auf das, was ich geschafft habe. Und genau deshalb 
+                habe ich Inklu entwickelt – für Menschen wie mich. Für Menschen wie dich.
               </p>
             </div>
           </div>
