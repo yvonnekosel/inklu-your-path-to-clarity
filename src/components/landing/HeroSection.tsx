@@ -1,4 +1,5 @@
 import { ArrowRight, ChevronDown } from "lucide-react";
+import inkluLogo from "@/assets/inklu-logo.png";
 
 const HeroSection = () => {
   return (
@@ -41,9 +42,7 @@ const HeroSection = () => {
                 <div className="absolute top-8 left-1/2 -translate-x-1/2 w-24 h-6 bg-foreground rounded-full z-10" />
                 <div className="w-full h-full bg-gradient-to-b from-turquoise-light to-white rounded-[2.5rem] overflow-hidden flex items-center justify-center">
                   <div className="text-center p-6 space-y-4">
-                    <div className="w-16 h-16 mx-auto bg-turquoise rounded-2xl flex items-center justify-center">
-                      <span className="text-2xl font-bold text-primary-dark">I</span>
-                    </div>
+                    <img src={inkluLogo} alt="Inklu Logo" className="w-20 h-20 mx-auto" />
                     <p className="text-sm text-muted-foreground">
                       Dein persönlicher Wegweiser
                     </p>
