@@ -1,5 +1,5 @@
 import { ArrowRight, ChevronDown } from "lucide-react";
-import inkluLogo from "@/assets/inklu-logo.png";
+import appWelcome from "@/assets/app-welcome.png";
 
 const HeroSection = () => {
   return (
@@ -40,13 +40,12 @@ const HeroSection = () => {
               {/* Phone Frame */}
               <div className="relative w-72 h-[580px] bg-foreground rounded-[3rem] p-3 shadow-2xl">
                 <div className="absolute top-8 left-1/2 -translate-x-1/2 w-24 h-6 bg-foreground rounded-full z-10" />
-                <div className="w-full h-full bg-gradient-to-b from-turquoise-light to-white rounded-[2.5rem] overflow-hidden flex items-center justify-center">
-                  <div className="text-center p-6 space-y-4">
-                    <img src={inkluLogo} alt="Inklu Logo" className="w-20 h-20 mx-auto" />
-                    <p className="text-sm text-muted-foreground">
-                      Dein persönlicher Wegweiser
-                    </p>
-                  </div>
+                <div className="w-full h-full rounded-[2.5rem] overflow-hidden">
+                  <img 
+                    src={appWelcome} 
+                    alt="Inklu App Willkommensbildschirm" 
+                    className="w-full h-full object-cover object-top"
+                  />
                 </div>
               </div>
               {/* Decorative Elements */}
