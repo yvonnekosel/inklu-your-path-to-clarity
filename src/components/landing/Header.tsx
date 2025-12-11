@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import inkluLogo from "@/assets/inklu-logo.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -25,10 +26,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-turquoise rounded-xl flex items-center justify-center">
-              <span className="text-xl font-bold text-primary-dark">I</span>
-            </div>
-            <span className="text-2xl font-semibold text-foreground">Inklu</span>
+            <img src={inkluLogo} alt="Inklu Logo" className="h-12 w-auto" />
           </a>
 
           {/* Desktop Navigation */}
