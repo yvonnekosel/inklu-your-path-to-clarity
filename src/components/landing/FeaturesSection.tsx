@@ -1,30 +1,39 @@
 import { Compass, ClipboardList, Newspaper, MessageCircle, Users } from "lucide-react";
+import appKategorien from "@/assets/app-kategorien.png";
+import appCheckliste from "@/assets/app-checkliste.png";
+import appNachrichten from "@/assets/app-nachrichten.png";
+import appCommunity from "@/assets/app-community.png";
 
 const features = [
   {
     icon: Compass,
     title: "Ein Weg, den du endlich verstehst",
-    description: "Keine Paragraphen. Keine endlosen Formulare. Inklu führt dich wie eine vertraute Person Schritt für Schritt durch deine Möglichkeiten."
+    description: "Keine Paragraphen. Keine endlosen Formulare. Inklu führt dich wie eine vertraute Person Schritt für Schritt durch deine Möglichkeiten.",
+    screenshot: appKategorien
   },
   {
     icon: ClipboardList,
     title: "Hilfreiche Checklisten statt Chaos",
-    description: "Endlich weißt du, welche Unterlagen du brauchst – und kannst nichts mehr vergessen."
+    description: "Endlich weißt du, welche Unterlagen du brauchst – und kannst nichts mehr vergessen.",
+    screenshot: appCheckliste
   },
   {
     icon: Newspaper,
     title: "Wichtige Neuigkeiten, verständlich erklärt",
-    description: "Neue Leistungen? Gesetzesänderungen? Inklu sagt dir, was für dich relevant ist."
+    description: "Neue Leistungen? Gesetzesänderungen? Inklu sagt dir, was für dich relevant ist.",
+    screenshot: appNachrichten
   },
   {
     icon: MessageCircle,
     title: "Ein Ort, an dem du nicht allein bist",
-    description: "Chatte mit Menschen, die ähnliche Erfahrungen machen. Austausch, der stärkt – nicht überfordert."
+    description: "Chatte mit Menschen, die ähnliche Erfahrungen machen. Austausch, der stärkt – nicht überfordert.",
+    screenshot: appCommunity
   },
   {
     icon: Users,
     title: "Für dich und deine Familie",
-    description: "Angehörige können dein Konto mitbenutzen und dich unterstützen."
+    description: "Angehörige können dein Konto mitbenutzen und dich unterstützen.",
+    screenshot: appCommunity
   }
 ];
 
@@ -40,7 +49,7 @@ const FeaturesSection = () => {
         </div>
 
         {/* Features */}
-        <div className="space-y-8">
+        <div className="space-y-16 lg:space-y-24">
           {features.map((feature, index) => (
             <div
               key={index}
@@ -59,13 +68,14 @@ const FeaturesSection = () => {
                 </p>
               </div>
 
-              {/* App Screen Placeholder */}
-              <div className="flex-1 max-w-sm">
-                <div className="aspect-[9/16] max-h-80 bg-gradient-to-br from-turquoise-light to-white rounded-3xl shadow-card flex items-center justify-center p-8">
-                  <div className="text-center space-y-3">
-                    <feature.icon className="w-12 h-12 text-primary-dark mx-auto opacity-50" />
-                    <p className="text-sm text-muted-foreground">App-Screen</p>
-                  </div>
+              {/* App Screenshot */}
+              <div className="flex-1 max-w-xs">
+                <div className="relative">
+                  <img 
+                    src={feature.screenshot} 
+                    alt={`Inklu App - ${feature.title}`}
+                    className="w-full h-auto rounded-[2rem] shadow-card"
+                  />
                 </div>
               </div>
             </div>
