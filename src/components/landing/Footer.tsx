@@ -1,3 +1,5 @@
+import inkluLogo from "@/assets/inklu-logo.png";
+
 const Footer = () => {
   return (
     <footer className="bg-foreground text-background py-12">
@@ -5,12 +7,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Logo & Description */}
           <div className="md:col-span-2 space-y-4">
-            <div className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-turquoise rounded-xl flex items-center justify-center">
-                <span className="text-xl font-bold text-primary-dark">I</span>
-              </div>
-              <span className="text-2xl font-semibold">Inklu</span>
-            </div>
+            <img src={inkluLogo} alt="Inklu Logo" className="h-12 w-auto" />
             <p className="text-background/70 max-w-sm">
               Dein Wegweiser zu allen Leistungen, die dir zustehen – klar, verständlich 
               und Schritt für Schritt.
