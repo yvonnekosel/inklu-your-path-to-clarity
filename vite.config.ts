@@ -5,6 +5,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: "/inklu-your-path-to-clarity/",   // <<< WICHTIG für GitHub Pages
+
   server: {
     host: "::",
     port: 8080,
