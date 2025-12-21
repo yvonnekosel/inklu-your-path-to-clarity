@@ -32,6 +32,9 @@ jobs:
 
       - name: Build
         run: npm run build
+        
+      - name: Copy privacy policy into dist
+        run: cp privacy.html dist/privacy.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
